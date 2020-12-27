@@ -9,5 +9,6 @@ target 'MKPhotoBroswerDemo' do
 
   pod 'MWPhotoBrowser'
   pod 'SDWebImage'
+ 
 
 end

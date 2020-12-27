@@ -10,6 +10,7 @@
 #import "Masonry.h"
 #import "SCCollectionViewCell.h"
 #import "SCPhotoFilePath.h"
+#import "SCBroswerViewController.h"
 
 @interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,MWPhotoBrowserDelegate>
 
@@ -72,7 +73,8 @@
     SCPhotoFilePath *videoFile = [[SCPhotoFilePath alloc]init];
     videoFile.type = @"video";
     videoFile.filePath = @"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4";
-    [self.fileArrayM addObjectsFromArray:@[file1,file2,file3,file4,videoFile]];
+    
+    [self.fileArrayM addObjectsFromArray:@[videoFile,file1,file2,file3,file4]];
     
     for (SCPhotoFilePath *file in self.fileArrayM) {
         if ([file.type isEqualToString:@"image"]) {
@@ -99,7 +101,7 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    [self reviewPhotoWithIndex:indexPath.row];
+    [self reviewSCPhotoWithIndex:indexPath.row];
 }
 
 - (void)reviewPhotoWithIndex:(NSInteger)index{
@@ -119,6 +121,13 @@
     [photoBrowser setCurrentPhotoIndex:index];
     [self.navigationController pushViewController:photoBrowser animated:YES];
     
+}
+
+- (void)reviewSCPhotoWithIndex:(NSInteger)selectedIndex{
+    SCBroswerViewController *broswerVC = [[SCBroswerViewController alloc]init];
+    broswerVC.selectedIndex = selectedIndex;
+    broswerVC.dataList = self.fileArrayM;
+    [self.navigationController pushViewController:broswerVC animated:YES];
 }
 
 @end

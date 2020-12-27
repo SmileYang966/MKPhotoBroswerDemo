@@ -18,6 +18,7 @@
 		710AA3C8258EFCF6003E4D15 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 710AA3BD258EFCF6003E4D15 /* MASConstraint.m */; };
 		710AA3C9258EFCF6003E4D15 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 710AA3BF258EFCF6003E4D15 /* MASViewConstraint.m */; };
 		710AA3CA258EFCF6003E4D15 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 710AA3C0258EFCF6003E4D15 /* MASViewAttribute.m */; };
+		7118CF3E25972E6B006DAA5F /* SCBroswerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7118CF3D25972E6B006DAA5F /* SCBroswerViewController.m */; };
 		71734F4F258EF35500392FBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71734F4E258EF35500392FBF /* AppDelegate.m */; };
 		71734F52258EF35500392FBF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71734F51258EF35500392FBF /* SceneDelegate.m */; };
 		71734F55258EF35500392FBF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71734F54258EF35500392FBF /* ViewController.m */; };
@@ -25,6 +26,7 @@
 		71734F5A258EF35600392FBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71734F59258EF35600392FBF /* Assets.xcassets */; };
 		71734F5D258EF35600392FBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71734F5B258EF35600392FBF /* LaunchScreen.storyboard */; };
 		71734F60258EF35600392FBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71734F5F258EF35600392FBF /* main.m */; };
+		71C5AF5725985FB300F7835C /* SCPhotoReviewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C5AF5625985FB300F7835C /* SCPhotoReviewCollectionViewCell.m */; };
 		71F0EF6E258F161A0000D7ED /* SCCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0EF6D258F161A0000D7ED /* SCCollectionViewCell.m */; };
 		71F0EF72258F16990000D7ED /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 71F0EF71258F16990000D7ED /* 11.png */; };
 		71F0EF76258F1F270000D7ED /* SCPhotoFilePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0EF75258F1F270000D7ED /* SCPhotoFilePath.m */; };
@@ -58,6 +60,8 @@
 		710AA3BE258EFCF6003E4D15 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		710AA3BF258EFCF6003E4D15 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
 		710AA3C0258EFCF6003E4D15 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		7118CF3C25972E6B006DAA5F /* SCBroswerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCBroswerViewController.h; sourceTree = "<group>"; };
+		7118CF3D25972E6B006DAA5F /* SCBroswerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCBroswerViewController.m; sourceTree = "<group>"; };
 		71734F4A258EF35500392FBF /* MKPhotoBroswerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKPhotoBroswerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71734F4D258EF35500392FBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		71734F4E258EF35500392FBF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 		71734F5C258EF35600392FBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71734F5E258EF35600392FBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71734F5F258EF35600392FBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		71C5AF5525985FB300F7835C /* SCPhotoReviewCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPhotoReviewCollectionViewCell.h; sourceTree = "<group>"; };
+		71C5AF5625985FB300F7835C /* SCPhotoReviewCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPhotoReviewCollectionViewCell.m; sourceTree = "<group>"; };
 		71F0EF6C258F161A0000D7ED /* SCCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCollectionViewCell.h; sourceTree = "<group>"; };
 		71F0EF6D258F161A0000D7ED /* SCCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCollectionViewCell.m; sourceTree = "<group>"; };
 		71F0EF71258F16990000D7ED /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
@@ -160,6 +166,10 @@
 				71F0EF6D258F161A0000D7ED /* SCCollectionViewCell.m */,
 				71F0EF74258F1F270000D7ED /* SCPhotoFilePath.h */,
 				71F0EF75258F1F270000D7ED /* SCPhotoFilePath.m */,
+				7118CF3C25972E6B006DAA5F /* SCBroswerViewController.h */,
+				7118CF3D25972E6B006DAA5F /* SCBroswerViewController.m */,
+				71C5AF5525985FB300F7835C /* SCPhotoReviewCollectionViewCell.h */,
+				71C5AF5625985FB300F7835C /* SCPhotoReviewCollectionViewCell.m */,
 			);
 			path = MKPhotoBroswerDemo;
 			sourceTree = "<group>";
@@ -304,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				710AA3C9258EFCF6003E4D15 /* MASViewConstraint.m in Sources */,
+				71C5AF5725985FB300F7835C /* SCPhotoReviewCollectionViewCell.m in Sources */,
 				710AA3CA258EFCF6003E4D15 /* MASViewAttribute.m in Sources */,
 				71734F55258EF35500392FBF /* ViewController.m in Sources */,
 				71734F4F258EF35500392FBF /* AppDelegate.m in Sources */,
@@ -315,6 +326,7 @@
 				71F0EF76258F1F270000D7ED /* SCPhotoFilePath.m in Sources */,
 				710AA3C7258EFCF6003E4D15 /* View+MASAdditions.m in Sources */,
 				710AA3C4258EFCF6003E4D15 /* MASConstraintMaker.m in Sources */,
+				7118CF3E25972E6B006DAA5F /* SCBroswerViewController.m in Sources */,
 				710AA3C8258EFCF6003E4D15 /* MASConstraint.m in Sources */,
 				710AA3C1258EFCF6003E4D15 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				710AA3C5258EFCF6003E4D15 /* MASLayoutConstraint.m in Sources */,
