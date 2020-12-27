@@ -27,6 +27,9 @@
 		71734F5D258EF35600392FBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71734F5B258EF35600392FBF /* LaunchScreen.storyboard */; };
 		71734F60258EF35600392FBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71734F5F258EF35600392FBF /* main.m */; };
 		71C5AF5725985FB300F7835C /* SCPhotoReviewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C5AF5625985FB300F7835C /* SCPhotoReviewCollectionViewCell.m */; };
+		71C5AF5B259871BA00F7835C /* SCVideoReviewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C5AF5A259871BA00F7835C /* SCVideoReviewCollectionViewCell.m */; };
+		71C5AF5E2598732000F7835C /* view.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71C5AF5D2598732000F7835C /* view.jpg */; };
+		71C5AF6125987E6600F7835C /* video.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C5AF6025987E6600F7835C /* video.png */; };
 		71F0EF6E258F161A0000D7ED /* SCCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0EF6D258F161A0000D7ED /* SCCollectionViewCell.m */; };
 		71F0EF72258F16990000D7ED /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 71F0EF71258F16990000D7ED /* 11.png */; };
 		71F0EF76258F1F270000D7ED /* SCPhotoFilePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F0EF75258F1F270000D7ED /* SCPhotoFilePath.m */; };
@@ -76,6 +79,10 @@
 		71734F5F258EF35600392FBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		71C5AF5525985FB300F7835C /* SCPhotoReviewCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPhotoReviewCollectionViewCell.h; sourceTree = "<group>"; };
 		71C5AF5625985FB300F7835C /* SCPhotoReviewCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPhotoReviewCollectionViewCell.m; sourceTree = "<group>"; };
+		71C5AF59259871BA00F7835C /* SCVideoReviewCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCVideoReviewCollectionViewCell.h; sourceTree = "<group>"; };
+		71C5AF5A259871BA00F7835C /* SCVideoReviewCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCVideoReviewCollectionViewCell.m; sourceTree = "<group>"; };
+		71C5AF5D2598732000F7835C /* view.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = view.jpg; sourceTree = "<group>"; };
+		71C5AF6025987E6600F7835C /* video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video.png; sourceTree = "<group>"; };
 		71F0EF6C258F161A0000D7ED /* SCCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCollectionViewCell.h; sourceTree = "<group>"; };
 		71F0EF6D258F161A0000D7ED /* SCCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCollectionViewCell.m; sourceTree = "<group>"; };
 		71F0EF71258F16990000D7ED /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
@@ -149,6 +156,8 @@
 		71734F4C258EF35500392FBF /* MKPhotoBroswerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				71C5AF6025987E6600F7835C /* video.png */,
+				71C5AF5D2598732000F7835C /* view.jpg */,
 				71F0EF70258F168E0000D7ED /* Resources */,
 				710AA3A7258EFCF6003E4D15 /* Masonry */,
 				71734F4D258EF35500392FBF /* AppDelegate.h */,
@@ -170,6 +179,8 @@
 				7118CF3D25972E6B006DAA5F /* SCBroswerViewController.m */,
 				71C5AF5525985FB300F7835C /* SCPhotoReviewCollectionViewCell.h */,
 				71C5AF5625985FB300F7835C /* SCPhotoReviewCollectionViewCell.m */,
+				71C5AF59259871BA00F7835C /* SCVideoReviewCollectionViewCell.h */,
+				71C5AF5A259871BA00F7835C /* SCVideoReviewCollectionViewCell.m */,
 			);
 			path = MKPhotoBroswerDemo;
 			sourceTree = "<group>";
@@ -258,6 +269,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				71734F5D258EF35600392FBF /* LaunchScreen.storyboard in Resources */,
+				71C5AF6125987E6600F7835C /* video.png in Resources */,
+				71C5AF5E2598732000F7835C /* view.jpg in Resources */,
 				71734F5A258EF35600392FBF /* Assets.xcassets in Resources */,
 				71734F58258EF35500392FBF /* Main.storyboard in Resources */,
 				71F0EF72258F16990000D7ED /* 11.png in Resources */,
@@ -315,6 +328,7 @@
 			files = (
 				710AA3C9258EFCF6003E4D15 /* MASViewConstraint.m in Sources */,
 				71C5AF5725985FB300F7835C /* SCPhotoReviewCollectionViewCell.m in Sources */,
+				71C5AF5B259871BA00F7835C /* SCVideoReviewCollectionViewCell.m in Sources */,
 				710AA3CA258EFCF6003E4D15 /* MASViewAttribute.m in Sources */,
 				71734F55258EF35500392FBF /* ViewController.m in Sources */,
 				71734F4F258EF35500392FBF /* AppDelegate.m in Sources */,

@@ -9,6 +9,7 @@
 #import "Masonry/Masonry.h"
 #import "SCPhotoReviewCollectionViewCell.h"
 #import "SCPhotoFilePath.h"
+#import "SCVideoReviewCollectionViewCell.h"
 
 @interface SCBroswerViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
@@ -35,6 +36,7 @@
             make.edges.mas_equalTo(0);
         }];
         [_photoCollectionView registerClass:[SCPhotoReviewCollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
+        [_photoCollectionView registerClass:[SCVideoReviewCollectionViewCell class] forCellWithReuseIdentifier:@"video"];
     }
     return _photoCollectionView;
 }
@@ -53,10 +55,21 @@
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *ID = @"cell";
+    static NSString *viddeoId = @"video";
     SCPhotoReviewCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
-    cell.backgroundColor = UIColor.blueColor;
-    cell.filePath = self.dataList[indexPath.row];
-    return cell;
+    SCVideoReviewCollectionViewCell *videoCell = [collectionView dequeueReusableCellWithReuseIdentifier:viddeoId forIndexPath:indexPath];
+    
+    cell.backgroundColor = UIColor.blackColor;
+    videoCell.backgroundColor = UIColor.blackColor;
+    
+    SCPhotoFilePath *filePath = self.dataList[indexPath.row];
+    if ([filePath.type isEqual:@"video"]) {
+        videoCell.videoFilePath = filePath;
+        return videoCell;
+    }else{
+        cell.filePath = filePath;
+        return cell;
+    }
 }
 
 - (void)setDataList:(NSArray *)dataList{
